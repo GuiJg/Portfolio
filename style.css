@@ -183,7 +183,7 @@ body{
 .typing-text {
     font-size: 4rem;
     font-weight: 300;
-    border-right: .20em solid var(--cor-terciaria);
+    border-right: .1em solid var(--cor-terciaria);
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -197,27 +197,21 @@ body{
     opacity: 0;
 }
 
-.conteiner_cont_title_font1{
-    font-size: 1.2rem;
-    font-weight: 400;
+.typing-front{
+    border-right: .12em solid var(--cor-terciaria);
+    width: 60%;
+    font-size: 2em;
+    opacity: 0;
 }
 
-.dev_title{
-    font-size: 1.5em;
+.conteiner_cont_title_font{
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .title{
     color: var(--cor-terciaria);
     font-weight: 600;
-}
-
-.title_typing{
-    color: var(--cor-terciaria);
-    font-weight: 600;
-}
-
-.title_project{
-    text-align: center;
 }
 
 .conteiner_img{
@@ -428,6 +422,7 @@ body{
     color: #000;
 }
 
+/* responsividade para celular */
 @media(max-width: 1250px){
 
     .header{
