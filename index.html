@@ -8,27 +8,22 @@
     <link rel="shortcut icon" href="src/Images/large-blue-diamond.png"">
     <title>José Guilherme</title>
 </head>
-    <header class="header">
-        <nav class="header_menu">
+    <header class="header" id="home">
+        <div class="logo-button">      
+                <a href="#home"><img src="src/Images/large-blue-diamond.png" alt="emoji grande de uma diamante azul escuro" class="logo"></a>
+            <button class="menu-button">
+                <img src="src/Images/3-lines.png" alt="imagem de um botão de 3 linhas para abrir o menu" class="img-3lines">
+            </button>
+        </div>
+        
+        <nav class="header-menu">
             <a class="header_menu_link" href="#inicio">Início</a>
             <a class="header_menu_link" href="#sobre-mim">Sobre mim</a>
             <a class="header_menu_link" href="#projetos">Projetos</a>
             <a class="header_menu_link" href="#contato">Contato</a>
-            <!-- <input type="checkbox" id="darkmode-button">         <------ dark mode coming soon
-            <label for="darkmode-button"></label>   -->
         </nav> 
     </header>
 <body>
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
     <main id="inicio">
         <section class="conteiner">
             <img class="img" src="src/Images/profile_picture.png" alt="Foto de perfil de José Guilherme">
@@ -85,7 +80,9 @@
                     <ul>  
                         <li>
                             <p class="conteiner_cont_title_font ponto">
-                                Ainda não tive nenhuma experiência na área de tecnologia. Embora esteja altamente <strong class="title">motivado e capacitado</strong> a construir uma carreira nesse setor. Tenho dedicado meu tempo estudando e aprimorando minhas habilidades como <strong class="title">Desenvolvedor Front-end</strong>, e estou ansioso para ter a oportunidade de colocar meu conhecimento em prática em um ambiente profissional. Estou aberto a <strong class="title">aprender</strong> e <strong class="title">crescer</strong> em uma equipe colaborativa e desafiadora, e comprometido em alcançar excelência em minha carreira como <strong class="title"> Front-end</strong>.
+                                Experiência em <strong class="title">Desenvolvimento Web/Front-End</strong> com Projetos <strong class="title">Autônomos</strong>.
+                                <br>
+                                Tenho experiência em <strong class="title">desenvolvimento web/front-end</strong> com projetos autônomos para empresas como <strong class="title">Softcom tecnologia</strong> e <strong class="title">Integra Consultoria</strong>, além de projetos de criação de portfólios. Utilizei tecnologias como <strong class="title">HTML, CSS e JavaScript</strong> para criar interfaces intuitivas e responsivas. Colaborei com equipes de design e marketing, implementando <strong class="title">layouts atraentes</strong>. Estou sempre atualizado com as tendências do setor para oferecer soluções inovadoras e funcionais.
                             </p>
                         </li>
                     </ul>
@@ -119,19 +116,18 @@
         <div class="border" id="projetos"></div> 
 
         <section class="conteiner_project">
-
             <h2 class="conteiner_cont_title sub_border" >
                 Projetos
             </h2>  
 
             <div class="conteiner_cont_project">
-                <a href="https://guijg.github.io/Character_Select-Dark-Souls-ver-/" target="_blank" class="btn_project"><img src="src/Images/projeto_souls.png" alt="Tela de seleção de personagem baseado em Dark Souls"></a>
+                <a href="https://guijg.github.io/Softcom-clone/" target="_blank" class="btn_project"><img src="src/Images/Softcom-clone.png" alt="Tela de seleção de personagem baseado em Dark Souls"></a>
 
-                <a href="https://guijg.github.io/Softcom-clone/" target="_blank" class="btn_project"><img src="src/Images/Softcom-clone.png" alt="Em breve teremos mais projetos"></a>
+                <a href="https://guijg.github.io/integra-consultoria" target="_blank" class="btn_project"><img src="src/Images/integra-project.jpg" alt="projeto de uma empresa de consultoria empresarial"></a>
             </div>
 
             <div class="conteiner_cont_project">
-                <a target="_blank" class="btn_project"><img src="src/Images/em_breve.png" alt="Em breve teremos mais projetos"></a>
+                <a href="https://guijg.github.io/portfolio-design/" target="_blank" class="btn_project"><img src="src/Images/designer-project.jpg" alt="Portfolio para uma designer de marcas"></a>
 
                 <a target="_blank" class="btn_project"><img src="src/Images/em_breve.png" alt="Em breve teremos mais projetos"></a>
             </div>
@@ -174,6 +170,16 @@
     </main>
     <a class="btn_top"  href="#inicio" ></a>
     <footer class="baseboard">Desenvolvido por <strong> <a href="https://www.linkedin.com/in/j-gui/" class="baseboard_link" target="_blank">José Guilherme</a></strong></footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
