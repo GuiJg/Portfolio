@@ -485,7 +485,15 @@ body{
 @media(max-width: 900px){
 
     .header{
-        flex-direction: column;
+        height: 3em;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .img-3lines{
+        display: none;
     }
 
     .menu-button{
@@ -493,16 +501,13 @@ body{
         transition: 0.5s;
     }
 
-    .header_menu{
+    .header-menu{
         gap: 1em;
     }
 
-    .header-menu.active{
-        display: flex;
-    }
-
     .header_menu_link{
-        font-size: 1.1rem;
+        text-align: center;
+        font-size: clamp(1rem, 5vw, 1.5rem);
     }
 
     .conteiner{
