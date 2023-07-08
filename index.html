@@ -1,201 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="src/Images/large-blue-diamond.png"">
-    <title>José Guilherme</title>
+    <link rel="icon shortcut" href="assets/diamond-icon.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Portfolio | José Guilherme - Front-end Developer</title>
 </head>
-    <header class="header" id="home">
-        <div class="logo-button">      
-                <a href="#home"><img src="src/Images/large-blue-diamond.png" alt="emoji grande de uma diamante azul escuro" class="logo"></a>
-            <button class="menu-button">
-                <img src="src/Images/3-lines.png" alt="imagem de um botão de 3 linhas para abrir o menu" class="img-3lines">
-            </button>
-        </div>
-        
+<header id="portfolio">
+    <div class="header-logo">
+        <a href="#" class="logo-content">
+            <img src="assets/diamond-icon.png" alt="">
+        </a>
+        <button class="menu-button">
+            <img src="assets/3-lines.png" alt="três linhas representando o menu do cabeçalho" class="img-3lines">
+        </button>
+    </div>
         <nav class="header-menu">
-            <a class="header_menu_link" href="#inicio">Início</a>
-            <a class="header_menu_link" href="#sobre-mim">Sobre mim</a>
-            <a class="header_menu_link" href="#projetos">Projetos</a>
-            <a class="header_menu_link" href="#contato">Contato</a>
-        </nav> 
-    </header>
+            <a href="#" class="header-link">Início</a>
+            <a href="#about" class="header-link">Sobre</a>
+            <a href="#project" class="header-link">Projetos</a>
+            <a href="#contact" class="header-link">Contato</a>
+        </nav>
+</header>
 <body>
-    <main id="inicio">
-        <section class="conteiner">
-            <img class="img" src="src/Images/profile_picture.png" alt="Foto de perfil de José Guilherme">
-            <section class="conteiner_cont">
-                <div class="title_flex">
-                    <div class="conteiner_cont_title_font">
-                        <p class="typing-text typing-text-animation">
-                            Olá, meu nome é
-                            <br/>
-                        </p>
-                        <h1 class="typing-text typing-name">
-                            <strong class="title">&lt;José Guilherme&sol;&gt;
-                                <br/>
-                            </strong>
-                        </h1>
-                        <p class="typing-front">
-                            Front-end Developer
-                        </p>
-                    </div>
-                </div>
-            </section>
+    <section class="main">
+        <div class="introduction">
+            <p>
+                Olá, meu nome é 
+            </p>
+            <h2>
+                <strong>José Guilherme</strong>
+            </h2>
+            <p>
+                <strong>Front-end Developer</strong>
+            </p>
+        </div>
+        <div class="photo">
+            <img src="assets/profile_picture.png" alt="Foto de José Guilherme">
+        </div>
+    </section>
+    <section class="top-page" id="about">
+        <div class="title">
+            <h2>Sobre</h2>
+            <p>Mim</p>
+        </div>
+        <div class="container-about">
+            <div class="division"></div>
+            <p>
+                Com o tempo, à medida que fui aprendendo e ganhando experiência, decidi colocar em prática tudo o que aprendi, trabalhando em projetos autônomos para empresas importantes, como a <a href="https://softcomtecnologia.com.br" target="_blank" class="btn-softcom">Softcom Tecnologia</a>, que se dedica ao desenvolvimento de softwares para pequenos negócios, e a <a href="https://integra-consultoria.vercel.app" target="_blank" class="btn-integra">Integra</a>, que oferece consultoria e gestão empresarial.
+            </p>
+        </div>
+    </section>
+    <section class="mid-page" id="project">
+        <div class="title">
+            <h2>Projetos</h2>
+            <p>Recentes</p>
+        </div>
+        <div class="container-projects">
+            <div class="item">
 
-        </section>
-
-        <div class="border" id="sobre-mim"></div>
-
-        <section class="conteiner_about">
-            <section class="conteiner_cont_about">
-                <div class="conteiner_div_about">
-                    <h2 class="conteiner_cont_title sub_border">
-                        Sobre mim
-                    </h2>    
-                    <ul>
-                        <li>
-                            <p class="conteiner_cont_title_font ponto">
-                                Estudante do 5° período do Curso de <strong class="title">Análise e Desenvolvimento de Sistemas</strong> na Universidade Estácio de Sá. 
-                                Atualmente trabalhando como aprendiz em assistente administrativo pela empresa Soservi, fiz e faço cursos na área de tecnologia, como <strong 
-                                
-                                class="title">HTML & CSS, C, GIT e GitHub</strong>.</p>
-                        </li>
-                        <br>
-                        <br>
-                        <li>
-                            <p class="conteiner_cont_title_font ponto">
-                                Tenho como o objetivo de ser Desenvolvedor Front-end com especialidade em <strong class="title">React, Angular e JavaScript</strong>. Estudo diariamente para ingressar no mercado de trabalho tecnológico pelo qual sou apaixonado!
-                            </p>
-                        </li>
-                    </ul>
-
-                    <h2 class="conteiner_cont_title sub_border">
-                        Experiência
-                    </h2> 
-                      
-                    <ul>  
-                        <li>
-                            <p class="conteiner_cont_title_font ponto">
-                                Experiência em <strong class="title">Desenvolvimento Web/Front-End</strong> com Projetos <strong class="title">Autônomos</strong>.
-                                <br>
-                                Tenho experiência em <strong class="title">desenvolvimento web/front-end</strong> com projetos autônomos para empresas como <strong class="title">Softcom tecnologia</strong> e <strong class="title">Integra Consultoria</strong>, além de projetos de criação de portfólios. Utilizei tecnologias como <strong class="title">HTML, CSS e JavaScript</strong> para criar interfaces intuitivas e responsivas. Colaborei com equipes de design e marketing, implementando <strong class="title">layouts atraentes</strong>. Estou sempre atualizado com as tendências do setor para oferecer soluções inovadoras e funcionais.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="conteiner_certification">
-                    <h2 class="conteiner_cont_title sub_border">
-                        Certificações
-                    </h2>
-
-                    <a href="https://cursos.alura.com.br/user/takout/course/javascript-web-paginas-dinamicas/certificate" class="btn_certification" target="_blank">
-                        <img src="src/Images/alura.png" alt="icone da alura" style="width: 11%">JavaScript para Web: Crie páginas dinâmicas
-                    </a>
-
-                    <a href="https://cursos.alura.com.br/certificate/9c6cb602-3f55-4e5f-bb47-1c94c88bf57d" class="btn_certification" target="_blank">
-                        <img src="src/Images/alura.png" alt="icone da alura" style="width: 11%">HTML e CSS: Classes, posicionamento e Flexbox
-                    </a>
-                    <a href="https://cursos.alura.com.br/certificate/df8fb5e7-ad23-484f-93e1-8edddafa0502" class="btn_certification" target="_blank">
-                        <img src="src/Images/alura.png" alt="icone da alura" style="width: 17%;">HTML e CSS: ambientes de desenvolvimento, estrutura de arquivo e tags
-                    </a>
-                    <a href="https://cursos.alura.com.br/certificate/7ed7b9d7-eb11-45fd-8884-117122d83cc1" class="btn_certification" target="_blank">
-                        <img src="src/Images/alura.png" alt="icone da alura" style="width: 11%">HTML e CSS: cabeçalho, footer e variáveis CSS
-                    </a>
-                    
-                    <a href="https://drive.google.com/drive/folders/1fG414Y_UinjA0NZ9626DAaSMtJ7mx4BH?usp=sharing" class="btn_certification" target="_blank">
-                        + Mais certificados aqui
-                    </a>
-                </div>
-            </section> 
-        </section>
-
-        <div class="border" id="projetos"></div> 
-
-        <section class="conteiner_project">
-            <h2 class="conteiner_cont_title sub_border" >
-                Projetos
-            </h2>  
-
-            <div class="conteiner_cont_project">
-                <a href="https://guijg.github.io/Softcom-clone/" target="_blank" class="btn_project">
-                    <img src="src/Images/Softcom-clone.png" alt="Tela de seleção de personagem baseado em Dark Souls">
-                    <p>Softcom Clone - Software Company</p>
-                </a>
-
-                <a href="https://guijg.github.io/integra-consultoria" target="_blank" class="btn_project">
-                    <img src="src/Images/integra-project.jpg" alt="projeto de uma empresa de consultoria empresarial">
-                    <p>Integra - Consulting Company</p>
-                </a>
             </div>
+        </div>
+    </section>
+    <section class="bottom-page" id="contact">
+        <div class="container-contact">
 
-            <div class="conteiner_cont_project">
-                <a href="https://cynthiadesigns.vercel.app" target="_blank" class="btn_project">
-                    <img src="src/Images/designer-port.png" alt="Portfolio para uma designer de marcas">
-                    <p>Portfólio - Brand Designer</p>
-                </a>
-
-                <a target="_blank" class="btn_project">
-                    <img src="src/Images/em_breve.png" alt="Em breve teremos mais projetos">
-                    <p></p>
-                </a>
-            </div>
-
-        </section> 
-
-        <div class="border" id="contato"></div> 
-
-        <section class="conteiner_contact">
-            <section class="conteiner_cont_contact">
-                <div class="conteiner_btn">
-                    <h2 class="conteiner_title_link">Acesse minhas redes:</h2>
-
-                    <a href="https://github.com/GuiJg" target="_blank" class="btn"> 
-                        <img src="src/Images/github.png" alt="icone do Github"> Github
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/j-gui/" target="_blank" class="btn"> 
-                        <img src="src/Images/linkedin.png" alt="icone do Linkedin"> Linkedin
-                    </a>
-
-                    <a href="https://www.instagram.com/j.gu1/" target="_blank" class="btn"> 
-                        <img src="src/Images/instagram.png" alt="icone do Instagram"> Instagram
-                    </a>     
-            </section>     
-            <div class="conteiner_form">
-                <h1 class="formu">Formulário de Contato</h1>
-                <form action="https://formsubmit.co/josepessoa.dev@gmail.com" method="POST" class="form">
-                    <label for="name">Nome</label>
-                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required />
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required/>
-                    <input type="hidden" name="_next" value="https://guijg.github.io/Portfolio">
-                    <label for="message">Mensagem</label>
-                    <textarea name="message" id="message" placeholder="Escreva sua mensagem" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>     
-            </div>     
-        </section>
-    </main>
+        </div>
+    </section>
     <div class="btn-home">
-        <a href="#inicio" class="btn-content" style="opacity: 1;">
-            <img src="src/Images/seta.png" alt="Imagem de uma seta apontada para cima" class="img-seta">
+        <a href="#" class="btn-content" style="opacity: 0;">
+            <img src="assets/seta.png" alt="Imagem de uma seta apontada para cima" class="img-seta">
         </a>
     </div>
-    <footer class="baseboard">Desenvolvido por <strong> <a href="https://www.linkedin.com/in/j-gui/" class="baseboard_link" target="_blank">José Guilherme</a></strong></footer>
+    <footer>
+        <p>
+            Desenvolvido por <strong><a href="https://www.linkedin.com/in/j-gui/" class="footer-content">José Guilherme</a></strong>
+        </p>
+    </footer>
+    <script src="main.js"></script>
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
-    <script src="script.js"></script>
 </body>
 </html>
