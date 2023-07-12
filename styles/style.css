@@ -10,7 +10,7 @@
 
 body{
     font-family: 'Roboto Mono', monospace;
-    background-color: #000;
+    background-color: #011f27;
 }
 
 header{
@@ -58,8 +58,8 @@ header{
 
 .header-scroll{
     top: 0px;
-    background-color: #231f207d;
-    backdrop-filter: blur(5px);
+    background-color: #231f2044;
+    backdrop-filter: blur(7px);
     transition: 0.5s;
 }
 
@@ -88,7 +88,6 @@ button{
     align-items: center;
     gap: 10em;
     padding: 9% 5% 5% 5%;
-    background: linear-gradient(to bottom, #002029, #001318, #00637e);
 }
 
 .introduction{
@@ -114,23 +113,22 @@ strong{
     flex-direction: column;
     justify-content: center;
     gap: 5em;
-    background-color: #00637e;
     padding: 3% 5% 10% 5%;
 }
 
-.title{
+.title-about{
     display: flex;
     align-items: end;
 }
 
-.title h2{
+.title-about h2{
     font-size: 5rem;
     font-weight: 700;
     text-shadow: 4px 3px 0px #ffffffb9;
     color: #fff;
 }
 
-.title p{
+.title-about p{
     font-size: 1.5rem;
     font-weight: 200;
     margin-left: 240px;
@@ -148,9 +146,10 @@ strong{
 }
 
 .container-about p{
+    padding: 1%;
     font-size: 1.2rem;
-    font-weight: 500;
-    color: #000000c7;
+    font-weight: 200;
+    color: #fff;
 }
 
 .division{
@@ -161,17 +160,157 @@ strong{
 
 .btn-softcom{
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 0px 2px 0px #f5d930;
     color: #f5d930;
+    transition: 0.5s;
+}
+
+.btn-softcom:hover{
+    box-shadow: 0px 2px 0px #c2ab28;
+    color: #c2ab28;
 }
 
 .btn-integra{
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 0px 2px 0px #f7882d;
     color: #f7882d;
+    transition: 0.5s;
+}
+
+.btn-integra:hover{
+    box-shadow: 0px 2px 0px #ca7129;
+    color: #ca7129;
+}
+
+.mid-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5em;
+    padding: 3% 5% 10% 5%;
+}
+
+.title-project{
+    display: flex;
+    align-items: end; 
+}
+
+.title-project h2{
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 4px 3px 0px #ffffffb9;
+    color: #fff;
+}
+
+.title-project p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-left: 383px;
+    position: absolute;
+    color: #ffffffbb;
+}
+
+.container-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    overflow-y: hidden;
+    border-radius: 8px;
+    border: 2px solid #6d6d6d;
+    transition: 0.5s;
+    width: 30em;
+}
+
+.item:hover{
+    border: 2px solid #29d1ff;
+}
+
+.item span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4ed9ff;
+    text-shadow: 0px 0px 5px #4ed9ff;
+}
+
+.item p{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2759ff;
+    text-shadow: 0px 0px 5px #2759ff;
+}
+
+.project-item-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s;
+}
+
+.project-item-image img{
+    width: 100%;
+    height: auto; 
+}
+
+.item:hover .project-item-image{
+    filter: brightness(50%);
+    scale: 1.03;
+}
+
+.project-item-text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 8px;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin-left: 5%;
+    transform: translate(-50%, -50%);
+    padding: 1%;
+    opacity: 0;
+    color: #fff;
+    transition: opacity ease-in-out .4s;
+}
+
+.item:hover .project-item-text{
+    opacity: 1;
+}
+
+.project-item-text-image{
+    display: flex;
+    gap: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 35%;
+    transition: 0.5s;
+}
+
+.image{
+    transition: 0.2s;
+}
+
+.image:hover{
+    filter: brightness(50%);
 }
 
 .btn-home {
     position: fixed;
-    top: 87%;
+    padding: 1%;
+    top: 85%;
     left: 93%;
 }
 
@@ -179,9 +318,9 @@ strong{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
-    width: 5em;
-    height: 5em;
+    border-radius: 10px;
+    width: 4em;
+    height: 4em;
     transition: 0.5s;
 }
 
