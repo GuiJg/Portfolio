@@ -17,8 +17,8 @@
         </button>
     </div>
         <nav class="header-menu">
-            <a href="#" class="header-link">Início</a>
             <a href="#about" class="header-link">Sobre</a>
+            <a href="#skill" class="header-link">Habilidades</a>
             <a href="#project" class="header-link">Projetos</a>
             <a href="#contact" class="header-link">Contato</a>
         </nav>
@@ -52,13 +52,61 @@
             </p>
         </div>
     </section>
+    <section class="skills-page">
+        <div class="title-skills">
+            <h2>Habilidades</h2>
+            <p>Skills</p>
+        </div>
+        <div class="container-skills">
+            <div class="item-skills" id="html">
+                <div class="skills-item-image">    
+                    <img src="assets/html-icon.png" alt="Icone laranja do HTML5">
+                </div>
+                <div class="skills-item-text">
+                    <span>HTML5</span>
+                </div>
+            </div>
+            <div class="item-skills" id="css">
+                <div class="skills-item-image">    
+                    <img src="assets/css-icon.png" alt="Icone laranja do HTML5">
+                </div>
+                <div class="skills-item-text">
+                    <span>CSS3</span>
+                </div>
+            </div>
+            <div class="item-skills" id="javascript">
+                <div class="skills-item-image">    
+                    <img src="assets/js-icon.png" alt="Icone laranja do HTML5">
+                </div>
+                <div class="skills-item-text">
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="item-skills" id="git">
+                <div class="skills-item-image">    
+                    <img src="assets/git-icon.png" alt="Icone laranja do HTML5">
+                </div>
+                <div class="skills-item-text">
+                    <span>Git</span>
+                </div>
+            </div>
+            <div class="item-skills" id="github">
+                <div class="skills-item-image">    
+                    <img src="assets/github-icon.png" alt="Icone laranja do HTML5">
+                </div>
+                <div class="skills-item-text">
+                    <span>Github</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="mid-page" id="project">
         <div class="title-project">
             <h2>Projetos</h2>
             <p>Recentes</p>
         </div>
         <div class="container-projects">
-            <a href="https://softcomtecnologia.com.br" class="item">
+            <a href="https://softcomtecnologia.com.br" target="_blank" class="item">
                 <div class="project-item-image">
                     <img src="assets/softcom-project.jpg" alt="site amarelo de uma empresa de softwares">
                 </div>
@@ -72,7 +120,7 @@
                     </div>
                 </div>
             </a>
-            <a href="https://softcomtecnologia.com.br" class="item">
+            <a href="https://integra-consultoria.vercel.app" target="_blank" class="item">
                 <div class="project-item-image">
                     <img src="assets/integra-project.jpg" alt="site amarelo de uma empresa de softwares">
                 </div>
@@ -86,12 +134,12 @@
                     </div>
                 </div>
             </a>
-            <a href="https://softcomtecnologia.com.br" class="item">
+            <a href="https://gymfitacademia.vercel.app" target="_blank" class="item">
                 <div class="project-item-image">
                     <img src="assets/gymfit-project.jpg" alt="site amarelo de uma empresa de softwares">
                 </div>
                 <div class="project-item-text">
-                    <span>Gym fit academia</span>
+                    <span>Gym fit Academia</span>
                     <p>Clone</p>
                     <div class="project-item-text-image">
                         <img src="assets/html-icon.png" alt="Icone laranja do HTML5" class="image">
@@ -100,7 +148,7 @@
                     </div>
                 </div>
             </a>
-            <a href="https://softcomtecnologia.com.br" class="item">
+            <a href="https://cynthiadesigns.vercel.app" target="_blank" class="item">
                 <div class="project-item-image">
                     <img src="assets/design-project.png" alt="site amarelo de uma empresa de softwares">
                 </div>
@@ -114,7 +162,7 @@
                     </div>
                 </div>
             </a>
-            <a href="https://softcomtecnologia.com.br" class="item">
+            <div href="" class="item">
                 <div class="project-item-image">
                     <img src="assets/em-breve.png" alt="site amarelo de uma empresa de softwares">
                 </div>
@@ -127,8 +175,8 @@
                         <img src="assets/js-icon.png" alt="Icone amarelo do Javascript" class="image">
                     </div> -->
                 </div>
-            </a>
-            <a href="https://softcomtecnologia.com.br" class="item">
+            </div>
+            <div href="" class="item">
                 <div class="project-item-image">
                     <img src="assets/em-breve.png" alt="site amarelo de uma empresa de softwares">
                 </div>
@@ -141,12 +189,27 @@
                         <img src="assets/js-icon.png" alt="Icone amarelo do Javascript" class="image">
                     </div> -->
                 </div>
-            </a>
+            </div>
         </div>
     </section>
     <section class="bottom-page" id="contact">
+        <div class="title-contact">
+            <h2>Contato</h2>
+            <p>Contact</p>
+        </div>
         <div class="container-contact">
-
+            <div class="container-form">
+                <form action="https://formsubmit.co/josepessoa.dev@gmail.com" method="POST" class="form">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required="">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite um e-mail válido" required="">
+                    <input type="hidden" name="_next" value="https://josepessoa-dev.vercel.app/#contact">
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" placeholder="Escreva sua mensagem" required=""></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
     </section>
     <div class="btn-home">
@@ -156,7 +219,7 @@
     </div>
     <footer>
         <p>
-            Desenvolvido por <strong><a href="https://www.linkedin.com/in/j-gui/" class="footer-content">José Guilherme</a></strong>
+            Desenvolvido por <strong><a href="https://www.linkedin.com/in/j-gui/" target="_blank" class="footer-content">José Guilherme</a></strong>
         </p>
     </footer>
     <script src="main.js"></script>
