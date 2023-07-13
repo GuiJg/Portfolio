@@ -117,8 +117,8 @@ strong{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5em;
-    padding: 3% 5% 10% 5%;
+    gap: 5em;;
+    padding: 7% 5% 10% 5%;
 }
 
 .title-about{
@@ -202,7 +202,7 @@ strong{
     justify-content: center;
     align-items: center;
     gap: 8em;
-    padding: 3% 5% 5% 5%;
+    padding: 7% 5% 5% 5%;
 }
 
 .title-skills{
@@ -293,7 +293,7 @@ strong{
     justify-content: center;
     align-items: center;
     gap: 6em;
-    padding: 3% 5% 8% 5%;
+    padding: 6% 5% 8% 5%;
 }
 
 .title-project{
@@ -419,7 +419,7 @@ strong{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 6%;
 }
 
 .title-contact{
@@ -567,7 +567,7 @@ strong{
 footer{
     text-align: center;
     margin-top: auto;
-    background-color: #29d1ff;
+    background-color: #2c4899;
     color: #000;
     padding: 2%;
     font-size: 1.3rem;
