@@ -10,7 +10,7 @@
 
 body{
     font-family: 'Roboto Mono', monospace;
-    background-color: #011f27;
+    background-color: #000926;
 }
 
 header{
@@ -104,7 +104,11 @@ button{
 }
 
 strong{
-    color: #29d1ff;
+    background-image: linear-gradient(to left, #06acff ,#039be5, #2759ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
     font-weight: 700;
 }
 
@@ -141,6 +145,11 @@ strong{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #0f1836;
+    border-radius: 15px;
+    border-left: 10px solid #192138;
+    border-bottom: 8px solid #192138;
+    padding: 5%;
     gap: 5%;
     width: 60em;
     margin-left: 3%;
@@ -227,12 +236,12 @@ strong{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #06191f;
+    background-color: #090e1f;
     border: 2px solid #6d6d6d;
     border-radius: 10px;
-    padding: 1%;
+    padding: 3% 1% 3% 1%;
     width: 10em;
-    gap: 3em;
+    gap: 2em;
     transition: 0.5s;
 }
 
@@ -444,10 +453,19 @@ strong{
 .form textarea,
 .form button {
     width: 99%;
-    background: #06191f;
+    background: #090e1f;
+    transition: 0.5s;
+}
+
+.form label:focus,
+.form input:focus,
+.form textarea:focus{
+    color: #000;
+    background: #fff;
 }
 
 .form label{
+    background: none;
     color: #fff;
     line-height: 1;
 }
@@ -490,6 +508,7 @@ strong{
     border: 0.1em solid ;
     border-radius: 10px;
     padding: 1.5%;
+    width: 10em;
     font-size: 1rem;
     font-weight: 600;
     transition: 0.5s;
@@ -497,7 +516,7 @@ strong{
 
 .form button:hover{
     border: 1px solid #039be5;
-    background: #06191f;
+    background: linear-gradient(#039be5, #2759ff);
 }
 
 .formu{
@@ -523,6 +542,7 @@ strong{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #090e1f;
     border-radius: 10px;
     width: 4em;
     height: 4em;
@@ -530,6 +550,7 @@ strong{
 }
 
 .btn-content:hover{
+    background: #0e152e;
     transform: translateY(-5%);
 }
 
