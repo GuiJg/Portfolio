@@ -39,6 +39,69 @@ header{
     overflow-y: hidden;
 }
 
+#checkbox {
+    display: none;
+  }
+  
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    gap: 10px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition-duration: .5s;
+}
+  
+.bars {
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+  
+#bar2 {
+    transition-duration: .8s;
+}
+  
+#bar1 {
+    width: 50%;
+}
+  
+#bar2 {
+    width: 75%;
+}
+  
+#checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .1s;
+}
+  
+#checkbox:checked + .toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
+
 .header-menu{
     display: flex;
     gap: 1.1em;
@@ -604,6 +667,15 @@ footer{
         transition: 0.5s;
     }
 
+    #checkbox {
+        display: none;
+    }
+
+    .toggle {
+        display: flex;
+        align-items: end;
+    }
+
     .header-link{
         font-size: 1.5rem;
     }
@@ -618,7 +690,16 @@ footer{
 
     .main{
         flex-direction: column;
-        padding-top: 50%;
+        gap: 5em;
+        padding-top: 40%;
+    }
+
+    .introduction h2{
+        font-size: 3rem;
+    }
+
+    .photo img{
+        width: 100%;
     }
 
     .top-page{
@@ -634,5 +715,63 @@ footer{
     .mid-page{
         padding-top: 20%;
         padding-bottom: 20%;
+    }
+
+    .container-about{
+        width: auto;
+    }
+
+    .title-about h2{
+        font-size: 4rem;
+        border-bottom: 1px solid;
+    }
+
+    .title-about p{
+        display: none;
+    }
+
+    .title-skills{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-skills h2{
+        font-size: 2.7rem;
+        padding: 1%;
+        border-bottom: 1px solid;
+    }
+
+    .title-skills p{
+        display: none;
+    }
+
+    .container-projects{
+        gap: 2em;
+    }
+
+    .title-project h2{
+        font-size: 3rem;
+        border-bottom: 1px solid;
+    }
+
+    .title-project p{
+        display: none;
+    }
+
+    .item{
+        width: 100%;
+    }
+
+    .title-contact h2{
+        font-size: 3rem;
+        border-bottom: 1px solid;
+    }
+
+    .title-contact P{
+        display: none;
+    }
+
+    .btn-home{
+        left: 75%;
     }
 }

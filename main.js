@@ -1,5 +1,5 @@
 //navbar mobile
-const menuButton = document.querySelector('.menu-button');
+const menuButton = document.querySelector('.toggle');
 const headerMenu = document.querySelector('.header-menu');
   
   menuButton.addEventListener('click', function() {
