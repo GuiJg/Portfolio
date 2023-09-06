@@ -32,11 +32,12 @@ header{
 }
 
 .header-logo img{
-    width: 15%;
+    width: 100%;
 }
 
 .logo-content{
     overflow-y: hidden;
+    width: 15%;
 }
 
 #checkbox {
@@ -104,7 +105,7 @@ header{
 
 .header-menu{
     display: flex;
-    gap: 1.1em;
+    gap: 1.5em;
 }
 
 .header-link{
@@ -163,7 +164,7 @@ button{
 }
 
 .introduction p {
-    font-weight: 200;
+    font-weight: 400;
     font-size: 1.1rem;
     width: 75%;
 }
@@ -243,8 +244,8 @@ strong{
 }
 
 .btn-cont:hover{
-    box-shadow: 0px 2px 0px #c2ab28;
-    color: #c2ab28;
+    box-shadow: 0px 2px 0px #f53756;
+    color: #f53756;
 }
 
 .btn-integra{
@@ -257,8 +258,8 @@ strong{
 }
 
 .btn-integra:hover{
-    box-shadow: 0px 2px 0px #ca7129;
-    color: #ca7129;
+    box-shadow: 0px 2px 0px #ff9945;
+    color: #ff9945;
 }
 
 .skills-page{
