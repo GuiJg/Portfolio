@@ -8,9 +8,9 @@
     scroll-behavior: smooth;
 }
 
-body{
+body {
+    background: linear-gradient(274deg, #001559, #00196a, #001d7b, #00218c, #001559);
     font-family: 'Roboto Mono', monospace;
-    background-color: #000926;
 }
 
 header{
@@ -145,25 +145,27 @@ button{
     font-size: 1.5rem;
 }
 
-.main{
+.main {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10em;
     padding: 9% 5% 5% 5%;
 }
 
-.introduction{
+.introduction {
     color: #fff;
     font-size: 1.5rem;
+    width: 60%;
 }
 
 .introduction h2{
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
-.introduction p{
+.introduction p {
     font-weight: 200;
+    font-size: 1.1rem;
+    width: 75%;
 }
 
 strong{
@@ -231,16 +233,16 @@ strong{
     height: 10em;
 }
 
-.btn-softcom{
+.btn-cont {
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 400;
-    box-shadow: 0px 2px 0px #f5d930;
-    color: #f5d930;
+    font-weight: 600;
+    box-shadow: 0px 1px 0px #fb042b;
+    color: #fb042b;
     transition: 0.5s;
 }
 
-.btn-softcom:hover{
+.btn-cont:hover{
     box-shadow: 0px 2px 0px #c2ab28;
     color: #c2ab28;
 }
@@ -417,7 +419,7 @@ strong{
     text-shadow: 0px 0px 5px #4ed9ff;
 }
 
-.item p{
+.item p {
     font-size: 1.8rem;
     font-weight: 600;
     color: #2759ff;
