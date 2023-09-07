@@ -153,6 +153,43 @@ button{
     padding: 9% 5% 5% 5%;
 }
 
+.social-fixed {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    gap: 0.5em;
+    padding: 1% 0% 0% 0%;
+    z-index: 10;
+    bottom: 0;
+    left: 1%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.social-link {
+    filter: brightness(100%);
+    width: 35px;
+    transition: 0.5s;
+}
+
+.social-link:hover{
+    transform: translateY(-10%);
+    filter: brightness(80%);
+}
+
+.social-link img {
+    width: 100%;
+}
+
+.border{
+    background-color: #29d1ff;
+    height: 80px;
+    width: 3px;
+    margin-top: 20%;
+    margin-left: 45%;
+    border-radius: 10px;
+}
+
 .introduction {
     color: #fff;
     font-size: 1.5rem;
@@ -160,13 +197,14 @@ button{
 }
 
 .introduction h2{
-    font-size: 6rem;
+    font-size: 7rem;
 }
 
 .introduction p {
     font-weight: 400;
-    font-size: 1.1rem;
-    width: 75%;
+    font-size: 0.9rem;
+    margin-left: 0.7%;
+    width: 73%;
 }
 
 strong{
@@ -518,6 +556,16 @@ strong{
     margin-bottom: 5%;
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    width: 50em;
+    margin: 2%;
+}
+
 .form label,
 .form input,
 .form textarea,
@@ -535,6 +583,7 @@ strong{
 }
 
 .form label{
+    padding: 1% 0% 1%;
     background: none;
     color: #fff;
     line-height: 1;
@@ -545,13 +594,20 @@ strong{
     font: inherit;
     border: 1px solid transparent;
     border-radius: 10px;
-    margin-top: 0.3em;
-    margin-bottom: 1em;
-    padding: 0.8rem;
+    margin: 1%;
+    padding: 1.5%;
     color: #fff;
-    transition: border-color 0.5s;
-    transition: 0.5s;
-    box-shadow: 0.2s;
+    transition: all 0.5s;
+}
+
+.form input::placeholder,
+.form textarea::placeholder{
+    color: #fff;
+}
+
+.form input:focus::placeholder,
+.form textarea:focus::placeholder{
+    color: #000;
 }
 
 .form textarea{
@@ -629,11 +685,6 @@ strong{
     margin: 10%;
 }
 
-.footer-content{
-    text-decoration: none;
-    color: #000;
-}
-
 footer{
     text-align: center;
     margin-top: auto;
@@ -644,12 +695,18 @@ footer{
     font-weight: 400;
 }
 
+footer p{
+    color: #fff;
+}
+
 @media(max-width: 800px){
 
     header{
         flex-direction: column;
         padding: 5%;
         gap: 0;
+        background-color: #231f2044;
+    backdrop-filter: blur(7px);
     }
 
     .header-menu{
@@ -683,8 +740,8 @@ footer{
         font-size: 1.5rem;
     }
 
-    .header-logo img{
-        width: 30%;
+    .logo-content{
+        width: 20%;
     }
 
     .container-skills{
@@ -693,12 +750,26 @@ footer{
 
     .main{
         flex-direction: column;
+        align-items: center;
         gap: 5em;
-        padding-top: 40%;
+        padding-top: 45%;
+    }
+
+    .social-fixed{
+        display: none;
+    }
+
+    .introduction{
+        width: 100%;
     }
 
     .introduction h2{
-        font-size: 3rem;
+        font-size: 3.3rem;
+    }
+
+    .introduction p{
+        font-size: 0.7rem;
+        width: 100%;
     }
 
     .photo img{
@@ -711,6 +782,7 @@ footer{
     }
 
     .skills-page{
+        gap: 5em;
         padding-top: 20%;
         padding-bottom: 20%;
     }
@@ -724,9 +796,12 @@ footer{
         width: auto;
     }
 
+    .division{
+        height: 25em;
+    }
+
     .title-about h2{
         font-size: 4rem;
-        border-bottom: 1px solid;
     }
 
     .title-about p{
@@ -741,7 +816,6 @@ footer{
     .title-skills h2{
         font-size: 2.7rem;
         padding: 1%;
-        border-bottom: 1px solid;
     }
 
     .title-skills p{
@@ -754,7 +828,6 @@ footer{
 
     .title-project h2{
         font-size: 3rem;
-        border-bottom: 1px solid;
     }
 
     .title-project p{
@@ -766,15 +839,51 @@ footer{
     }
 
     .title-contact h2{
+        text-align: center;
         font-size: 3rem;
-        border-bottom: 1px solid;
     }
 
     .title-contact P{
         display: none;
     }
 
+    .form{
+        width: 20em;
+    }
+
+    .form input,
+    .form textarea{
+        padding: 3%;
+    }
+
+    .form input::placeholder,
+    .form textarea::placeholder{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+
+    .form button{
+        padding: 4%;
+    }
+
     .btn-home{
-        left: 75%;
+        left: 80%;
+    }
+
+    .btn-content{
+        width: 3em;
+        height: 3em;
+    }
+
+    .img-seta{
+        margin: 15%;
+    }
+
+    footer{
+        padding: 5% 0% 5% 0%;
+    }
+
+    footer p{
+        font-size: 1rem;
     }
 }
