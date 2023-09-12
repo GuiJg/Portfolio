@@ -214,15 +214,17 @@
         </div>
         <div class="container-contact">
             <div class="container-form">
-                <form action="https://formsubmit.co/josepessoa.dev@gmail.com" method="POST" class="form">
+                <form action="https://api.staticforms.xyz/submit" method="POST" class="form">
                     <label for="name">Nome</label>
                     <input type="text" name="name" id="name" placeholder="Digite seu nome" required="">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Digite um e-mail válido" required="">
-                    <input type="hidden" name="_next" value="https://josepessoa-dev.vercel.app/#contact">
                     <label for="message">Mensagem</label>
                     <textarea name="message" id="message" placeholder="Escreva sua mensagem" required=""></textarea>
                     <button type="submit">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="56ad90db-d598-42a1-b00e-e223dccb494e">
+                    <input type="hidden" name="redirectTo" value="https://josepessoa-dev.vercel.app/obrigado.html"> 
                 </form>
             </div>
         </div>
@@ -237,7 +239,7 @@
             Desenvolvido por <strong><a href="https://www.linkedin.com/in/j-gui/" target="_blank" class="footer-content">José Guilherme</a></strong>
         </p>
     </footer>
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
