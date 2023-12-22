@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
@@ -6,9 +6,25 @@
     box-sizing: border-box;
 }
 
-body{
-    background: linear-gradient(274deg, #001559, #00196a, #001d7b, #00218c, #001559);
-    font-family: 'Poppins', sans-serif;
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(45deg, #0b0022, #020077, #5100ff, #4100cc);
+    background-size: 300% 300%;
+    animation: colors 15s ease infinite;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 section{
