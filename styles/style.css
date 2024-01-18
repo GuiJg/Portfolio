@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -11,31 +9,18 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(45deg, #0b0022, #020077, #5100ff, #4100cc);
-    background-size: 300% 300%;
-    animation: colors 15s ease infinite;
-}
-
-@keyframes colors {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    background-color: #181818;
+    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
+    font-family: 'League Spartan', sans-serif;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5% 2% 2% 2%;
+    position: absolute;
+    width: 100%;
+    padding: 2% 4% 2% 4%;
 }
 
 .header-menu {
@@ -45,8 +30,9 @@ header {
 
 .header-link {
     text-decoration: none;
+    font-size: 1.1rem;
     font-weight: 300;
-    color: #ffff;
+    color: #e9e8e8;
 }
 
 .header-link::after {
@@ -65,126 +51,74 @@ header {
 }
 
 .header-logo {
-    width: 6%;
+    width: 5%;
 }
 
 .header-logo img {
     width: 100%;
 }
 
-.main-banner {
+.header-media{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 600px;
-}
-
-.banner {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
-    gap: 20px;
+    gap: 10px;
+    width: 9%;
 }
 
-.banner h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 5rem;
-    font-weight: 400;
-    color: #e9e8e8;
-    border: 2px solid #fff;
+.header-media svg{
+    width: 100%;
+    padding: 1%;
+    transition: 0.5s;
+}
+
+.header-media svg:hover{
+    transform: translateY(-5%);
+}
+
+.main-banner{
+    display: flex;
+    height: 50rem;
+}
+
+.title-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 5% 5% 5% 5%;
+}
+
+.title-banner h1{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.title-banner p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.title-banner a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
     padding: 2%;
-}
-
-.banner p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.5rem;
-    color: #e9e8e8;
-}
-
-a {
+    background-color: transparent;
+    border: 1px solid #fff;
     text-decoration: none;
+    color: #fff;
+    box-shadow: 2px 2px 1px 1px #fff;
+    transition: 0.5s; 
 }
 
-.main__action {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10%;
+.title-banner a:hover{
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 0px 0px 0px #fff;
 }
 
-.main__scroll-text {
-    color: #e9e8e8;
-}
-
-.main__action:hover .main__scroll-box {
-    animation: scroll-down 3s infinite;
-}
-
-/* Animate scroll icon */
-@keyframes scroll-down {
-
-    0%,
-    100% {
-        transform: translateY(0rem);
-        opacity: 1;
-    }
-
-    35% {
-        transform: translateY(1rem);
-        opacity: 0;
-    }
-
-    70% {
-        transform: translateY(-1rem);
-        opacity: 0;
-    }
-}
-
-.main-about {
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-    gap: 50px;
-}
-
-.division{
-    border: 1px solid #e9e8e8;
-}
-
-.text-about {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-family: 'Raleway', sans-serif;
-    width: 31%;
-    margin-top: 4%;
-    text-align: justify;
-    color: #e9e8e8;
-}
-
-.text-about h1 {
-    font-size: 2.5rem;
-    margin-bottom: 3%;
-}
-
-.skills-freelance {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.skills-freelance li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.skills-freelance li:before {
-    content: '>';
-    margin-right: 5px;
-    font-family: 'Rethink Sans', sans-serif;
+.title-banner h1 strong{
+    text-shadow: -3px 3px 1px #0B098A;
 }
