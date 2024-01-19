@@ -10,10 +10,21 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html" class="header-logo">
-            <img src="assets/ICON GUILHERME PESSOA BR.png" alt="">
-        </a>
+    <header class="" id="header-portfolio">
+        <div class="navbar-mobile">
+            <a href="index.html" class="header-logo">
+                <img src="assets/ICON GUILHERME PESSOA BR.png" alt="">
+            </a>
+            <label class="hamburger">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </div>
         <nav class="header-menu">
             <a href="#about" class="header-link">Sobre mim</a>
             <a href="#skills" class="header-link">Habilidades</a>
@@ -41,20 +52,93 @@
             </a>
         </div>
     </header>
+    <section class="main-banner">
+        <div class="title-banner">
+            <h1>
+                Olá!
+                <br>
+                Eu sou <strong>G</strong>uilherme <strong>P</strong>essoa
+                <br>
+                Desenvolvedor Web
+            </h1>
+            <div class="container">
+                <p>Desenvolvedor Front-End</p>
+                <div class="underline"></div>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=5581986927127&text=Ol%C3%A1,%20Gostaria%20de%20uma%20proposta%20para%20um%20projeto!%20"
+                target="_blank">
+                Contato
+            </a>
+        </div>
+    </section>
+    <section class="banner-project">
+        <ul class='slider'>
+            <li class='item' style="background-image: url('assets/mockup')">
+                <div class='content'>
+                    <h2 class='title'>Projeto titulo</h2>
+                    <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                        praesentium nisi. Id laboriosam ipsam enim. </p>
+                    <button>Read More</button>
+                </div>
+            </li>
+            <li class='item' style="background-image: url('assets/mockup')">
+                <div class='content'>
+                    <h2 class='title'>Projeto titulo</h2>
+                    <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                        praesentium nisi. Id laboriosam ipsam enim. </p>
+                    <button>Read More</button>
+                </div>
+            </li>
+            <li class='item' style="background-image: url('assets/mockup')">
+                <div class='content'>
+                    <h2 class='title'>Projeto titulo</h2>
+                    <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                        praesentium nisi. Id laboriosam ipsam enim. </p>
+                    <button>Read More</button>
+                </div>
+            </li>
+            <li class='item' style="background-image: url('assets/mockup')">
+                <div class='content'>
+                    <h2 class='title'>Projeto titulo</h2>
+                    <p class='description'>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis
+                        inventore praesentium nisi. Id laboriosam ipsam enim.
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </li>
+            <li class='item' style="background-image: url('assets/mockup')">
+                <div class='content'>
+                    <h2 class='title'>Projeto titulo</h2>
+                    <p class='description'>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis
+                        inventore praesentium nisi. Id laboriosam ipsam enim.
+                    </p>
+                    <button>Read More</button>
+                </div>
+            </li>
+            <li class='item' style="background-image: url('assets/mockup')">
+                <div class='content'>
+                    <h2 class='title'>Projeto titulo</h2>
+                    <p class='description'> Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+                        praesentium nisi. Id laboriosam ipsam enim. </p>
+                    <button>Read More</button>
+                </div>
+            </li>
+        </ul>
+        <nav class='nav'>
+            <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+            <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+        </nav>
+    </section>
+    sect
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
-<section class="main-banner">
-    <div class="title-banner">
-        <h1>
-            Olá!
-            <br>
-            Eu sou <strong>G</strong>uilherme <strong>P</strong>essoa
-            <br>
-            Desenvolvedor Web
-        </h1>
-        <p>Desenvolvedor Front-End</p>
-        <a href="https://api.whatsapp.com/send?phone=5581986927127&text=Ol%C3%A1,%20Gostaria%20de%20uma%20proposta%20para%20um%20projeto!%20" target="_blank">
-            Contato
-        </a>
-    </div>
-</section>
+
 </html>
