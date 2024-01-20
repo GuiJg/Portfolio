@@ -78,7 +78,22 @@
                 Contato
             </a>
         </div>
+        <div class="main__action">
+            <a class="main__scroll" href="#project">
+                <div class="main__scroll-box">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
+                            fill="white">
+                        </path>
+                    </svg>
+                </div>
+                <span class="main__scroll-text">Scroll</span>
+            </a>
+        </div>
     </section>
+    <div id="project"></div>
     <section class="banner-project">
         <ul class='slider'>
             <li class='item' style="background-image: url('assets/')">
@@ -143,6 +158,7 @@
             <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
         </nav>
     </section>
+    <div id="about"></div>
     <section class="about-main">
         <div class="image-about">
             <img src="assets/about-photo.png" alt="">
@@ -168,6 +184,7 @@
             <div class="border"></div>
         </div>
     </section>
+    <div id="services"></div>
     <section class="services-page">
         <div class="text-services">
             <h2>Conheça os meus principais serviços.</h2>
@@ -179,6 +196,22 @@
                 <p>Landing Page</p>
             </div>
         </div>
+    </section>
+    <div id="contact"></div>
+    <section class="contact-page">
+        <div class="title-contact">
+            <h2>Entre em contato comigo!</h2>
+            <div class="div-contact"></div>
+        </div>
+        <form action="https://formspree.io/f/mdordvjp" method="POST" class="form">
+            <label for="name">Nome completo*</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome" required="">
+            <label for="email">E-mail*</label>
+            <input type="email" name="email" id="email" placeholder="Digite um e-mail válido" required="">
+            <label for="message">Mensagem*</label>
+            <textarea name="message" id="message" placeholder="Digite a descrição do seu projeto" required=""></textarea>
+            <button type="submit">Solicitar Proposta</button>
+        </form>
     </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

@@ -25,23 +25,13 @@ window.addEventListener("scroll", function () {
     }
 });
 
-//
 document.addEventListener("DOMContentLoaded", function () {
     const header = document.getElementById("header-portfolio");
 
     // Função para aplicar as alterações no estilo
     function applyStyles(isScrolled) {
-        // Altera a cor dos links
-        document.querySelectorAll(".header-link").forEach(function (link) {
-            link.style.color = isScrolled ? "black" : "white";
-        });
-        
-        document.querySelectorAll("svg path").forEach(function (path) {
-            path.style.fill = isScrolled ? "black" : "white";
-        });
-
         // Altera a imagem do logo
-        document.querySelector(".header-logo img").src = isScrolled ? "assets/ICON GUILHERME PESSOA PT.png" : "assets/ICON GUILHERME PESSOA BR.png";
+        document.querySelector(".header-logo img").src = isScrolled ? "assets/ICON GUILHERME PESSOA AZUL.png" : "assets/ICON GUILHERME PESSOA BR.png";
     }
 
     // Aplica os estilos no carregamento inicial da página
