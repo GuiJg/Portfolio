@@ -9,9 +9,21 @@
 }
 
 body {
-    background-color: #181818;
-    background-image: url("https://www.transparenttextures.com/patterns/classy-fabric.png");
+    background: radial-gradient(circle at 50% -150%, rgba(11, 9, 138, 1) 50%, rgba(0, 0, 0, 1) 67%);
+    position: relative;
     font-family: 'League Spartan', sans-serif;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    opacity: 50%;
+    z-index: -1;
 }
 
 header {
@@ -131,7 +143,8 @@ header {
 
 .main-banner {
     display: flex;
-    height: 40rem;
+    padding-top: 12.5%;
+    padding-bottom: 12.5%;
 }
 
 .title-banner {
@@ -158,6 +171,7 @@ header {
     align-items: center;
     width: 25%;
     padding: 2%;
+    margin: 1%;
     background-color: transparent;
     border: 1px solid #fff;
     text-decoration: none;
@@ -174,6 +188,16 @@ header {
 
 .title-banner h1 strong {
     text-shadow: -3px 3px 1px #0B098A;
+}
+
+#svg1 {
+    position: absolute;
+    transform: translate(-510%, -116%);
+}
+
+#svg {
+    position: absolute;
+    transform: translate(-10%, -20%);
 }
 
 .container {
@@ -405,7 +429,7 @@ header {
     }
 }
 
-.about-main{
+.about-main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -413,17 +437,18 @@ header {
     margin: 10% 5% 5% 5%;
 }
 
-.image-about{
+.image-about {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30%;
 }
 
-.image-about img{
+.image-about img {
     width: 100%;
 }
 
-.text-container{
+.text-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -431,7 +456,7 @@ header {
     width: 40%;
 }
 
-.text-container h2{
+.text-container h2 {
     font-size: 1.7rem;
     color: #fff;
 }
@@ -441,28 +466,24 @@ header {
     color: #82F0FF;
 }
 
-.text-container p{
+.text-container p {
     color: #fff;
+    text-align: end;
+    margin-top: 5%;
 }
 
-.div-paragraph{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.border{
+.border {
     background-color: #fff;
     width: 5px;
-    height: 200px;
+    height: 250px;
     margin-left: 5%;
 }
 
-.text-container a{
+.text-container a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 3%;
     margin: 4% 1% 1% 1%;
     background-color: transparent;
     border: 1px solid #fff;
@@ -472,13 +493,13 @@ header {
     transition: 0.5s;
 }
 
-.text-container a:hover{
+.text-container a:hover {
     background-color: #fff;
     color: #000;
     box-shadow: 0px 0px 0px 0px;
 }
 
-.text-about{
+.text-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -486,3 +507,9 @@ header {
     gap: 10px;
 }
 
+.services-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 5% 5% 5%;
+}
