@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -146,7 +147,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 12.5%;
+    padding-top: 8%;
     padding-bottom: 12.5%;
 }
 
@@ -160,9 +161,10 @@ header {
 }
 
 .title-banner h1 {
+    font-family: 'Barlow', sans-serif;
     font-size: 4rem;
     font-weight: 700;
-    color: #fff;
+    color: #ffffffd6;
 }
 
 .title-banner p {
@@ -222,7 +224,7 @@ header {
 .main__action {
     position: absolute;
     left: 50%;
-    top: 16.5%;
+    top: 15%;
     overflow: hidden;
     transform: translate(-40%, 100%);
 }
